@@ -1,0 +1,192 @@
+.thera {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 300px;
+}
+.thera_wrapper {
+  width: 100%;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.thera_content_wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.wrap_stable_content {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  min-width: 480px;
+}
+.sec_title {
+  color: var(--main-title-color);
+  font-family: 'Bebas Neue';
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 483px;
+  margin-bottom: 12px;
+}
+.sec_title_highlight {
+  color: var(--usual-decorations);
+  font-family: 'Bebas Neue';
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.thera_sub_text {
+  max-width: 376px;
+  color: #000;
+  font-family: 'Open Sans';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.thera_button {
+  max-width: 246px;
+  margin-top: 52px;
+}
+.thera_absolute_wrapper {
+  position: relative;
+  width: 67%;
+  height: 355px;
+}
+
+.th_text_involved {
+  position: absolute;
+  right: 650px;
+  bottom: -100px;
+}
+.th_text_reduce {
+  position: absolute;
+  top: 120px;
+  right: 0;
+}
+.th_image_dark {
+  width: 492.754px;
+  height: 492.754px;
+  transform: rotate(-20deg);
+  position: absolute;
+  bottom: -200px;
+  right: 350px;
+  z-index: 2;
+  transition: all 1s;
+}
+.th_image_bright {
+  width: 492.754px;
+  height: 492.754px;
+  position: absolute;
+  top: -100px;
+  right: 200px;
+  transform: rotate(15deg);
+  z-index: 3;
+  transition: all 1s;
+}
+.thera_mob_absolute_wrapper {
+  display: none;
+}
+.thera_absolute_wrapper:hover .th_image_bright {
+  top: -200px;
+  transition: all 1s;
+}
+.thera_absolute_wrapper:hover .th_image_dark {
+  bottom: -300px;
+  transition: all 1s;
+}
+@media (max-width: 1600px) {
+  .thera_wrapper {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  .thera_content_wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+  }
+  .thera_absolute_wrapper {
+    display: none;
+  }
+  .thera_mob_absolute_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .thera_mob_bottle_wrapper {
+    height: 300px;
+    width: 300px;
+    position: relative;
+  }
+  .th_image_dark {
+    bottom: 0;
+    right: 70px;
+    width: 233.473px;
+    height: 233.473px;
+  }
+  .th_image_bright {
+    top: 0;
+    right: 0;
+    width: 233.473px;
+    height: 233.473px;
+  }
+  .thera_mob_bottle_wrapper:hover .th_image_bright {
+    top: -20px;
+    transition: all 0.5s;
+  }
+  .thera_mob_bottle_wrapper:hover .th_image_dark {
+    bottom: -20px;
+    transition: all 0.5s;
+  }
+  .thera {
+    padding-top: 120px;
+    padding-bottom: 20px;
+  }
+  .thera_content_wrapper {
+    gap: 42px;
+  }
+  .sec_title {
+    font-size: 40px;
+    max-width: 310px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sec_title_highlight {
+    font-size: 40px;
+  }
+  .thera_sub_text {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  .thera_button {
+    margin: 0 auto;
+    margin-top: 22px;
+    max-width: 266px;
+    font-size: 18px;
+  }
+  .wrap_stable_content {
+    min-width: auto;
+    width: 100%;
+  }
+  .thera_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .th_reduce_image_mob {
+    align-self: flex-start;
+  }
+  .th_inv_image_mob {
+    align-self: flex-end;
+  }
+}
