@@ -3,6 +3,7 @@
   padding-top: 150px;
   padding-bottom: 140px;
   background-color: #cdecef;
+  overflow: hidden;
 }
 .why_wrapper {
   padding-left: 170px;
@@ -13,6 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .why_title {
   align-self: flex-start;
@@ -67,6 +69,9 @@
   justify-content: center;
   position: relative;
 }
+.why_item:hover {
+  cursor: pointer;
+}
 .why_item_text {
   color: #000;
   font-family: 'Open Sans';
@@ -94,6 +99,9 @@
   opacity: 0;
   transition: all 0.5s;
 }
+.why_abs_item-text:hover {
+  transform: scale(1.05);
+}
 .why_item_icon {
 }
 .why_icon_title {
@@ -112,4 +120,139 @@
 .why_abs_item-text.show {
   opacity: 1; /* Visible state */
   transition: all 0.5s;
+}
+.why_dark_bottle {
+  width: 588.918px;
+  height: 588.918px;
+  transform: rotate(-16deg);
+  position: absolute;
+  top: -80px;
+  right: -140px;
+  z-index: 2;
+  animation: rotateBackAndForthdark 5s infinite;
+}
+.why_bright_bottle {
+  width: 588.918px;
+  height: 588.918px;
+  transform: rotate(13deg);
+  position: absolute;
+  top: 70px;
+  right: 80px;
+  animation: rotateBackAndForthbright 5s infinite;
+}
+.rotate-animation {
+  display: inline-block;
+}
+.why_title_mob {
+  display: none;
+}
+
+@keyframes rotateBackAndForthbright {
+  0% {
+    transform: rotate(13deg);
+  }
+
+  50% {
+    transform: rotate(-13deg);
+  }
+  100% {
+    transform: rotate(13deg);
+  }
+}
+@keyframes rotateBackAndForthdark {
+  0% {
+    transform: rotate(-16deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-16deg);
+  }
+}
+@media (max-width: 1600px) {
+  .why_wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 1600px) {
+  .why_wrap_two {
+    gap: 60px;
+  }
+  .why_wrap_three {
+    gap: 60px;
+  }
+  .why_wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1420px) {
+  .why_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .why_dark_bottle {
+    display: none;
+  }
+  .why_bright_bottle {
+    display: none;
+  }
+  .why_wrap_two {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .why_wrap_three {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .why_items_wrapper {
+    gap: 60px;
+  }
+}
+@media (max-width: 580px) {
+  .why {
+    padding-top: 22px;
+    padding-bottom: 52px;
+  }
+  .why_title {
+    display: none;
+  }
+  .why_highlight {
+    font-size: 36px;
+  }
+  .why_title_mob {
+    display: block;
+    color: #002b32;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    max-width: 340px;
+    margin-bottom: 32px;
+  }
+  .why_item {
+    width: 241.5px;
+    height: 216px;
+  }
+  .why_abs_item-text {
+    width: 241.5px;
+    height: 216px;
+  }
+  .why_item_icon {
+    max-width: 140px;
+  }
+  .why_icon_title {
+    font-size: 24px;
+  }
+  .why_abs_item-text {
+    padding: 16.5px;
+  }
+  .why_item_text {
+    font-size: 14px;
+  }
 }
