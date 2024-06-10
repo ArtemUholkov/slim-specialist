@@ -1,6 +1,7 @@
 .hiw {
   width: 100%;
   background-color: #fff;
+  overflow: hidden;
 }
 .hiw_wrapper {
   padding-top: 100px;
