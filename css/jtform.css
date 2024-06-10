@@ -1,0 +1,55 @@
+.joforma {
+  width: 100%;
+  padding: 80px 160px;
+  background: #cdecef;
+}
+.jotforma_wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+.jotforma_title {
+  color: #002b32;
+  font-family: 'Bebas Neue';
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin-bottom: 0;
+}
+.jotforma_highlight {
+  color: #35aa9a;
+  font-family: 'Bebas Neue';
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.form_wrapper {
+  max-width: 1152px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: transparent;
+}
+.supernova {
+  background-color: transparent !important;
+}
+@media (max-width: 1150px) {
+  .joforma {
+    padding: 80px 50px;
+  }
+}
+@media (max-width: 850px) {
+  .joforma {
+    padding: 22px 10px 0px;
+  }
+  .jotforma_title {
+    max-width: 287px;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+  .jotforma_highlight {
+    font-size: 40px;
+  }
+}

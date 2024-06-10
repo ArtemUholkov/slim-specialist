@@ -1,89 +1,64 @@
 footer {
   width: 100%;
-  background-color: var(--main-text-color);
-  padding-top: 100px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: #fff;
 }
 
-.footer_content_wrapper {
-  max-width: 1200px;
+.footer-wrapper {
+  max-width: 1600px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.footer_logo_wrapper {
-  width: 241px;
-  height: 49px;
-}
-.footer_logo {
-  width: 241px;
-  height: 49px;
-}
-.links_wrapper {
+  padding: 40px 20px;
+  border-bottom: 1px solid #a9cfd0;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
-.footer-nav-link {
-  text-decoration: none;
-  color: var(--main-bg-color);
-  transition: all 0.3s;
-  font-family: 'Montserrat';
-  font-weight: 700;
-}
-.footer-nav-link:hover {
-  color: var(--main-bg-color);
-  opacity: 0.7;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-.footer_button:hover {
-  color: white;
-  background-color: var(--usual-decorations);
-  opacity: 1;
-}
-.socials_wrapper {
-  border-top: 0.5px solid rgb(146, 146, 146);
-  margin-top: 50px;
-}
-.footer_copy {
-  font-family: 'Montserrat';
-  font-size: 18px;
-  color: white;
-
-  margin: 0 auto;
-  margin-top: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.footer_socials {
+.footer-logo-button_wrapper {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-  margin: 0 auto;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
-.social {
+.foot-logo-link {
+  text-decoration: none;
 }
-i {
-  height: 30px;
-  width: 30px;
+.footer-logo {
+  width: 166px;
+  height: 136px;
 }
-@media (max-width: 800px) {
-  .footer_content_wrapper {
-    flex-direction: column;
-    gap: 40px;
+
+.footer_button {
+  max-width: 350px;
+  margin-top: 0;
+}
+.deco-line {
+  height: 1px;
+  background-color: #a9cfd0;
+  width: 100%;
+}
+.footer_copy {
+  color: var(--Dark-Green, #090b08);
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .footer-logo-button_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   .footer_button {
-    max-width: 330px;
-    font-size: 15px;
+    max-width: 350px;
+    margin: 0;
   }
-  footer {
-    padding-top: 50px;
+}
+@media (max-width: 550px) {
+  .footer-logo-button_wrapper {
+    flex-direction: column;
+    gap: 20px;
   }
 }
