@@ -89,6 +89,9 @@
     align-items: center;
     justify-content: center;
   }
+  .main-mob-logo-images {
+    max-height: 44px;
+  }
   .main_button {
     margin: 0 auto;
     margin-top: 42px;

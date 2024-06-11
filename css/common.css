@@ -130,7 +130,7 @@ table {
 
 /*COMMONT STYLES START*/
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 .main_button {
   display: flex;
