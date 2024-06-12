@@ -80,11 +80,13 @@
 .bef-aft_item_aim {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 4px;
+  gap: 8px;
 }
 .bef_aft_item_aim_icon {
+  height: 24px;
+  width: 24px;
 }
 .bef-aft_item_aim_text {
   color: var(--CTA-Green, #35aa9a);
