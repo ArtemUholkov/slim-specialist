@@ -25,8 +25,62 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="img/global/fav.png" />
     <link rel="stylesheet" href="css/index.css" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KBGQ6THB');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '25741752282135696');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=25741752282135696&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KBGQ6THB"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="header">
       <div class="header_wrapper mycontainer">
         <nav class="navbar">
@@ -34,7 +88,13 @@
             <img src="img/global/logo.webp" alt="logo" class="main-logo logo-desk" />
             <img src="img/global/logo_mob.png" alt="logo" class="main-logo logo-mob" />
           </a>
-
+          <a
+            href=""
+            class="main_button header_button_desk"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            >Buy Now</a
+          >
           <ul class="navbar_menu">
             <li><a href="#about" class="nav_elem">About</a></li>
             <li><a href="#Ourservice" class="nav_elem">Our Service</a></li>
@@ -67,10 +127,57 @@
                 <a href="#contact" class="nav_elem_mobile">Contact Us</a>
               </li>
             </ul>
+            <a
+              href=""
+              class="main_button header_button_mob"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              >Buy Now</a
+            >
           </div>
         </div>
       </div>
     </header>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              id="JotFormIFrame-241641710043343"
+              title="Your Slim Specialist - Therapies"
+              onload="window.parent.scrollTo(0,0)"
+              allowtransparency="true"
+              allow="geolocation; microphone; camera; fullscreen"
+              src="https://form.jotform.com/241641710043343"
+              frameborder="0"
+              style="min-width: 100%; max-width: 100%; height: 539px; border: none"
+              scrolling="no"
+            >
+            </iframe>
+            <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+            <script>
+              window.jotformEmbedHandler(
+                "iframe[id='JotFormIFrame-241641710043343']",
+                'https://form.jotform.com/',
+              );
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="main_picture">
       <img src="img/main/mobbg.webp" alt="mob bg" class="mob_bg_image" />
       <div class="main_content mob_content">
@@ -851,7 +958,7 @@
         <div class="form_wrapper">
           <script
             type="text/javascript"
-            src="https://form.jotform.com/jsform/241611332820343"
+            src="https://form.jotform.com/jsform/241642000422337"
           ></script>
         </div>
       </div>

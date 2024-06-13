@@ -1,3 +1,19 @@
+.modal {
+  overflow-y: auto;
+}
+
+.modal-open {
+  overflow: auto;
+}
+.modal-dialog {
+  max-width: 1000px;
+}
+.header_button_desk {
+  margin: 0 !important;
+}
+.form-all {
+  margin-top: 0 !important;
+}
 header {
   background-color: #fff;
   width: 100%;
@@ -18,7 +34,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin: 0 auto;
 }
 
@@ -121,7 +136,7 @@ header {
 
 @media (max-width: 1620px) {
   .header_wrapper {
-    padding: 24px 100px 16px 100px;
+    padding: 24px 30px 16px 30px;
   }
 }
 @media (max-width: 1200px) {
@@ -211,7 +226,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
     background: url('../img/header/mobmenubg.png');
     background-size: 80% 90%;
@@ -347,5 +362,9 @@ header {
   }
   .logo-mob {
     display: block;
+  }
+  .header_button_desk {
+    padding: 15px 25px;
+    font-size: 14px;
   }
 }
