@@ -364,6 +364,7 @@ header {
     display: block;
   }
   .header_button_desk {
+    display: none;
     padding: 15px 25px;
     font-size: 14px;
   }
